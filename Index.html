@@ -11,18 +11,32 @@
     </head>
 
     <body>
+        <script src="script.js"></script>
+        <script src="scripts/reinicio.js"></script>
 
-        <div id="ZonaTitulo">
-            <script src="scripts/script.js"></script>
-            <script src="scripts/script.js"></script>
+        <div id="intro">
 
-            <h1 id="titulo">El Ahorcado Game</h1>
+            <div id="intro_info">
+                <h1 id="titulo">El Ahorcado</h1>
+                <h3 id="subtitulo">Consigue adivinar la palabra sin quedarte sin vidas.
+                    Ves seleccionando letras para ver si forman parte de la palabras
+                    e ir completando la solución. Si fallas una letra, pierdes una vida.
+                    Tienes solamente 4 vidas. ¡Tú puedes!
+                </h3>
+            </div>
+ 
+            <div id="intro_jugar">
+                <button onclick="inicioJuego()">
+                    Jugar
+                </button>
+            </div>           
+
         </div>
 
         <div id="ZonaFormulario">
             <form>
-                <label>Introduce la letra<br>
-                    <br><input type="text" name="letra_introducido" id="letraintroducida" value="" required pattern="[A-Za-z]{1}" maxlength="1"/>
+                <label>Introduce la letra<br><br>
+                    <input type="text" name="letra_introducido" id="letraintroducida" value="" required pattern="[A-Za-z]{1}" maxlength="1"/>
                 </label>
 
                 <button type="submit" id="envio">
