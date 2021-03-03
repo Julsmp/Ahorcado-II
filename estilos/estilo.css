@@ -1,3 +1,17 @@
+html { 
+    /*Fondo*/
+    background-color: #c2c2c221;
+
+    /*Fuente*/
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #383838;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -5,4 +19,30 @@ a.button {
 
     text-decoration: none;
     color: initial;
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+}
+
+#intro_jugar{
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+#intro_info {
+    flex-grow: 3;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#ZonaFormulario{
+    display: none;
 }
