@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Ahorcado </title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="estilos/estilo.css" type="text/css" />
+    </head>
+
+    <body>
+
+        <div id="ZonaTitulo">
+            <script src="scripts/script.js"></script>
+            <script src="scripts/script.js"></script>
+
+            <h1 id="titulo">El Ahorcado Game</h1>
+        </div>
+
+        <div id="ZonaFormulario">
+            <form>
+                <label>Introduce la letra<br>
+                    <br><input type="text" name="letra_introducido" id="letraintroducida" value="" required pattern="[A-Za-z]{1}" maxlength="1"/>
+                </label>
+
+                <button type="submit" id="envio">
+                    ➜
+                </button> 
+
+                <button type="reset" onclick="Reiniciar_Formulario()">
+                    ⟲
+                </button>
+                <br>
+        </div>
+
+        <div id="ZonaAhorcado">
+            
+
+        </div>
+
+        <div>
+            <p id="ZonaLetras"> </p>
+            <span ></span>
+        </div>
+
+    </body>
+
+</html>
